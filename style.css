@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+
+    height: 100vh;
+    background: url(bg.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.profil-card {
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+
+
+}
+
+.card-header {
+    background-color: powderblue;
+    padding: 100px 40px;
+}
+
+.picture img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.picture {
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #74b9ff, #040200);
+    margin: auto;
+    border-radius: 50%;
+    animation: animasyon 2s linear infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes animasyon {
+    25% {
+        background-position: left bottom;
+    }
+
+    50% {
+        background-position: right bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+
+    100% {
+        background-position: left top;
+    }
+
+}
+
+.name {
+    color: black;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+.desc {
+    font: size 50px;
+    color: rgb(123, 7, 7)
+}
+
+.sm {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+
+
+}
+
+.sm a {
+    color: black;
+    width: 70px;
+    font-size: 40px;
+    transition: 0.3s linear;
+}
+
+.sm a:hover {
+    color: rgb(17, 65, 113);
+}
+
+.contact-btn{
+
+    display: inline-block;
+    padding: 12px 50px;
+    color: #101267;
+    border: 2px solid #671515;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition:.3s linear ;
+}
+
+.contact-btn:hover{
+    background: #101267;
+    color: powderblue;
+    border: 2px  solid orange;
+}
